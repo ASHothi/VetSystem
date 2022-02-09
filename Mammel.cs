@@ -8,9 +8,9 @@ namespace AnimalExampleCSharp
 {
     public abstract class Mammel : Animal
     {
-        public Mammel(string name, double weight) : base(name, weight)
+        public Mammel(string name, double weight, string gender, double height, int age)
+            : base(name, weight, gender, height, age)
         {
-
         }
 
         public override void Breathe()

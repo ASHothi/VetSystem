@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalExampleCSharp 
+namespace AnimalExampleCSharp
 {
-    internal class Penguin : Bird
+    internal class Dog : Mammel
     {
-        public Penguin(string name, double weight, string gender, double height, int age)
+        public Dog(string name, double weight, string gender, double height, int age)
             : base(name, weight, gender, height, age)
         {
         }
 
         public override void Eat(string food)
         {
-            // implement eat method
+            throw new NotImplementedException();
         }
-
     }
 }

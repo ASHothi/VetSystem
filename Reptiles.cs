@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AnimalExampleCSharp
 {
-    public abstract class Bird : Animal
+    public abstract class Reptiles : Animal
     {
-        protected Bird(string name, double weight, string gender, double height, int age)
+        public Reptiles(string name, double weight, string gender, double height, int age) 
             : base(name, weight, gender, height, age)
         {
         }

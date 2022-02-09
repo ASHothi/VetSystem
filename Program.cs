@@ -7,10 +7,9 @@ public class program
     {
         Console.WriteLine("Hello, World!");
 
-        Bat myBat = new Bat();
+        Bat myBat = new Bat("bob", 5, "male");
 
         Console.WriteLine(myBat.ToString());
-        Console.WriteLine(myBat.);
         Console.WriteLine(myBat.Excerete());
     }
 }
