@@ -15,7 +15,7 @@ namespace AnimalExampleCSharp
 
         public override void Eat(string food)
         {
-            // implement eat method
+            // Implement eat method
         }
 
         public void Flight()
