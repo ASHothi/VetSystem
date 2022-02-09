@@ -12,5 +12,15 @@ namespace AnimalExampleCSharp
             : base(name, weight, gender, height, age)
         {
         }
+
+        public override void Breathe()
+        {
+            // implemnt breathe method
+        }
+
+        public override Mammel Reproduce(Animal otherParent)
+        {
+            throw null;
+        }
     }
 }
