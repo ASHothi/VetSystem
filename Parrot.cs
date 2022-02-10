@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace AnimalExampleCSharp
 {
-    internal class Dog : Mammel
+    public class Parrot : Bird
     {
-        public string breed { get; private set; }
-
-        public Dog(string name, double weight, string gender, double height, int age, string breed)
+        public Parrot(string name, double weight, string gender, double height, int age) 
             : base(name, weight, gender, height, age)
         {
-            this.breed = breed;
         }
 
         public override void Eat(string food)

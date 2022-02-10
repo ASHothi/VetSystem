@@ -13,6 +13,7 @@ namespace AnimalExampleCSharp
         public double weight { get; private set; }
         public string gender { get; private set; }
         public double height { get; private set; }
+        public bool isAlive { get; private set; }
 
         public Animal(string name, double weight, string gender, double height, int age) : base()
         {
@@ -21,6 +22,7 @@ namespace AnimalExampleCSharp
             this.gender = gender;
             this.height = height;
             this.age = age;
+            isAlive = true;
         }
 
         public abstract void Eat(string food);
@@ -41,7 +43,7 @@ namespace AnimalExampleCSharp
 
         public void Die()
         {
-            // add die method
+            isAlive = false;
         }
     }
 }

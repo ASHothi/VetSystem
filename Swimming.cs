@@ -9,5 +9,11 @@ namespace AnimalExampleCSharp
     internal interface Swimming
     {
         void Swim();
+
+        void Dive();
+
+        void Surface();
+
+        void Float();
     }
 }
