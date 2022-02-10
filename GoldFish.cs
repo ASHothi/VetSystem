@@ -8,8 +8,8 @@ namespace AnimalExampleCSharp
 {
     public class GoldFish : Fish
     {
-        public GoldFish(string name, double weight, string gender, double height, int age) 
-            : base(name, weight, gender, height, age)
+        public GoldFish(string name, double weight, string gender, DateTime birthDay) 
+            : base(name, weight, gender, birthDay)
         {
         }
 

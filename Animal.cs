@@ -12,22 +12,17 @@ namespace AnimalExampleCSharp
         public int age { get; private set; }
         public double weight { get; private set; }
         public string gender { get; private set; }
-        public double height { get; private set; }
         public bool isAlive { get; private set; }
-
         public DateTime birthDay { get; private set; }
 
-
-        public Animal(string name, double weight, string gender, double height, int age) : base()
+        public Animal(string name, double weight, string gender, DateTime birthDay) : base()
         {
             this.name = name;
             this.weight = weight;
             this.gender = gender;
-            this.height = height;
-            this.age = age;
+            this.birthDay = birthDay;
             isAlive = true;
-
-            birthDay = new DateTime(2008, 2, 5);
+            Age();
         }
 
         public abstract void Eat(string food);
@@ -48,6 +43,18 @@ namespace AnimalExampleCSharp
 
         public void Age()
         {            
+            DateTime dateTime = DateTime.Now;
+            age = dateTime.Year - birthDay.Year;
+
+            if (birthDay.Month != 0 && dateTime.Month > birthDay.Month)
+            {
+                age--;
+            }
+
+            if (birthDay.Day != 0 && dateTime.Day > birthDay.Day)
+            {
+                age--;
+            }  
         }
 
         public void Die()

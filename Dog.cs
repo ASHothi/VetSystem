@@ -10,15 +10,14 @@ namespace AnimalExampleCSharp
     {
         public string breed { get; private set; }
 
-        public Dog(string name, double weight, string gender, double height, int age, string breed)
-            : base(name, weight, gender, height, age)
+        public Dog(string name, double weight, string gender, DateTime birthDay, string breed)
+            : base(name, weight, gender, birthDay)
         {
             this.breed = breed;
         }
 
-        public Dog(String Name) : this(Name, 0, null, 0, 0, null)
+        public Dog(String Name) : this(Name, 0, null, new DateTime(), null)
         {
-
         }
 
         public override void Eat(string food)

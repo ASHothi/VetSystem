@@ -24,6 +24,8 @@ public class program
 
             Console.WriteLine("What is your home address?");
 
+            Console.WriteLine("what pet doy you have?");
+
         }
 
 

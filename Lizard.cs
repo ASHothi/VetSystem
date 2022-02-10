@@ -8,8 +8,8 @@ namespace AnimalExampleCSharp
 {
     internal class Lizard : Reptiles
     {
-        public Lizard(string name, double weight, string gender, double height, int age) 
-            : base(name, weight, gender, height, age)
+        public Lizard(string name, double weight, string gender, DateTime birthDay) 
+            : base(name, weight, gender, birthDay)
         {
         }
 
