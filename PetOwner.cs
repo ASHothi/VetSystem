@@ -8,6 +8,11 @@ namespace AnimalExampleCSharp
 {
     public class PetOwner
     {
+        /*
+         * Class not used
+         * 
+         */
+
         public string name { get; set; }
         public int phoneNumber { get; set; }
         public string email { get; set; }

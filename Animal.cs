@@ -9,11 +9,11 @@ namespace AnimalExampleCSharp
     public abstract class Animal
     {
         public string name { get; private set; }
-        public int age { get; private set; }
-        public double weight { get; private set; }
-        public string gender { get; private set; }
+        public int age { get; set; }
+        public double weight { get; set; }
+        public string gender { get; set; }
         public bool isAlive { get; private set; }
-        public DateTime birthDay { get; private set; }
+        public DateTime birthDay { get; set; }
 
         public Animal(string name, double weight, string gender, DateTime birthDay) : base()
         {
@@ -22,6 +22,7 @@ namespace AnimalExampleCSharp
             this.gender = gender;
             this.birthDay = birthDay;
             isAlive = true;
+            age = 0;
             Age();
         }
 

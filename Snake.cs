@@ -13,6 +13,10 @@ namespace AnimalExampleCSharp
         {
         }
 
+        public Snake(String Name) : this(Name, 0, null, new DateTime())
+        {
+        }
+
         public override void Eat(string food)
         {
             throw new NotImplementedException();

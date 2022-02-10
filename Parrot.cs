@@ -11,7 +11,10 @@ namespace AnimalExampleCSharp
         public Parrot(string name, double weight, string gender, DateTime birthDay) 
             : base(name, weight, gender, birthDay)
         {
+        }
 
+        public Parrot(String Name) : this(Name, 0, null, new DateTime())
+        {
         }
 
         public override void Eat(string food)

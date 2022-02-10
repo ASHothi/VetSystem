@@ -13,6 +13,10 @@ namespace AnimalExampleCSharp
         {
         }
 
+        public Reptiles(String Name) : this(Name, 0, null, new DateTime())
+        {
+        }
+
         public override void Breathe()
         {
             // implemnt breathe method
