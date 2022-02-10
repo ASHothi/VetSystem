@@ -16,6 +16,11 @@ namespace AnimalExampleCSharp
             this.breed = breed;
         }
 
+        public Dog(String Name) : this(Name, 0, null, 0, 0, null)
+        {
+
+        }
+
         public override void Eat(string food)
         {
             throw new NotImplementedException();

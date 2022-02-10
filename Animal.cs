@@ -15,6 +15,9 @@ namespace AnimalExampleCSharp
         public double height { get; private set; }
         public bool isAlive { get; private set; }
 
+        public DateTime birthDay { get; private set; }
+
+
         public Animal(string name, double weight, string gender, double height, int age) : base()
         {
             this.name = name;
@@ -23,13 +26,14 @@ namespace AnimalExampleCSharp
             this.height = height;
             this.age = age;
             isAlive = true;
+
+            birthDay = new DateTime(2008, 2, 5);
         }
 
         public abstract void Eat(string food);
 
         public void Sleep(int lengthOfSleep)
         {
-            // sleep method
         }
 
         public abstract Animal Reproduce(Animal otherParent);
@@ -38,12 +42,25 @@ namespace AnimalExampleCSharp
 
         public string Excerete()
         {
+            weight--;
             return "I have logged this";
         }
 
+        public void Age()
+        {            
+        }
+
         public void Die()
-        {
-            isAlive = false;
+        {   
+            if (!isAlive)
+            {
+                Console.WriteLine("Has already died");
+            }
+            else
+            {
+                isAlive = false;
+                Console.WriteLine(name + " has died");
+            }
         }
     }
 }
